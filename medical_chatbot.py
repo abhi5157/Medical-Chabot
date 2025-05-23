@@ -25,7 +25,7 @@ class MedicalChatbot:
     def initialize_models(self):
         """Initialize and train the ML models."""
         try:
-            # Load the dataset from data directory
+            # Load the dataset from Disease directory
             dataset_path = os.path.join('data', 'Disease_symptom_and_patient_profile_dataset.csv')
             if os.path.exists(dataset_path):
                 self.ml_models = MedicalMLModels()
